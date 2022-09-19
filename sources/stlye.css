@@ -1,0 +1,48 @@
+html 
+{
+    background-color: #222;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+body {margin: 0px;}
+
+center 
+{
+    animation-name: bootup;
+    animation-duration: 2.5s;
+    transition: ease-in;
+    margin: 20px;
+}
+
+ul 
+{
+    text-align: left;
+}
+
+object
+{
+    width: 100%;
+}
+
+.Bottomcurves 
+{
+    position: absolute;
+    bottom: 0px;
+    rotate: 180deg;
+}
+
+.container 
+{
+    background-color: rgb(28, 28, 28);
+    width: 50%;
+    padding: 10px;
+    border-radius: 1vh;
+    margin: 10px;
+}
+
+@keyframes bootup {
+    from {scale: 50%;}
+    to {scale: 100%;}
+}
