@@ -67,6 +67,13 @@ object
     box-shadow: 0px 0px 10px 0px white, 0px 0px 20px 0px white;
 }
 
+#rajz
+{
+    border-style: double;
+    border-width: 10px;
+    border-color: white;
+}
+
 @keyframes bootup {
     from {scale: 50%; opacity: 0%;}
     to {scale: 100%; opacity: 100%;}
