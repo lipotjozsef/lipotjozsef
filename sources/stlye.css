@@ -2,8 +2,7 @@ html
 {
     background-color: #222;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    
+    font-family: 'Courier New', Courier, monospace;   
 }
 
 body 
@@ -73,8 +72,42 @@ object
     border-width: 10px;
     border-color: white;
 }
+  
+#btn:before 
+{
+    content: "";
+    position: absolute;
+    background: #383736;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+ }
+  
+#btn:hover:before 
+{
+    top: 0;
+}
+#btn
+{
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 1vh;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
 
 @keyframes bootup {
     from {scale: 50%; opacity: 0%;}
     to {scale: 100%; opacity: 100%;}
+}
+
+@keyframes fillup {
+    from {background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,246,19,1) 35%, rgba(127,209,1,1) 100%);}
+    to {background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,246,19,1) 99%, rgba(127,209,1,1) 100%);;}
 }
