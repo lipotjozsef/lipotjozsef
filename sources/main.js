@@ -1,6 +1,7 @@
 const canvas = document.getElementById("rajz");
 var btn = document.getElementById("down");
 const ctx = canvas.getContext("2d");
+var clr = "#000000";
 var isDrawing = false;
 var animFinished = false;
 
@@ -10,7 +11,9 @@ window.setTimeout(function () {
 }, 2000);
 
 function StartPainting(){
+    console.log(clr)
     isDrawing = true;
+    ctx.strokeStlye = clr;
 }
 
 function StopPainting(){
@@ -20,7 +23,6 @@ function StopPainting(){
 
 function draw(e){
     if(!isDrawing || !animFinished) return;
-
     ctx.lineWidth = 10;
     ctx.lineCap = "round";
     ctx.lineTo(e.clientX - 90, e.clientY -95);
@@ -34,6 +36,10 @@ canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mousedown", StartPainting);
 canvas.addEventListener("mouseup", StopPainting);
 
+function setColor(cl)
+{
+    clr = cl
+}
 
 function downloadImg() {
     var link = document.createElement('a');

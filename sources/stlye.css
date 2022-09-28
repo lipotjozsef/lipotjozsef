@@ -73,6 +73,14 @@ object
     border-color: white;
 }
 
+#red 
+{
+    background-color: red;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+}
+
 @keyframes bootup {
     from {scale: 50%; opacity: 0%;}
     to {scale: 100%; opacity: 100%;}
