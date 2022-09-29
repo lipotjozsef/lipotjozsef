@@ -13,7 +13,6 @@ window.setTimeout(function () {
 function StartPainting(){
     console.log(clr)
     isDrawing = true;
-    ctx.strokeStlye = clr;
 }
 
 function StopPainting(){
@@ -25,6 +24,7 @@ function draw(e){
     if(!isDrawing || !animFinished) return;
     ctx.lineWidth = 10;
     ctx.lineCap = "round";
+    ctx.strokeStyle = clr
     ctx.lineTo(e.clientX - 90, e.clientY -95);
     ctx.stroke();
     ctx.beginPath();
