@@ -3,6 +3,7 @@ var btn = document.getElementById("down");
 const ctx = canvas.getContext("2d");
 var clr = "#000000";
 var isDrawing = false;
+var isErasing = false;
 var animFinished = false;
 
 window.setTimeout(function () {
@@ -21,7 +22,7 @@ function StopPainting(){
 }
 
 function draw(e){
-    if(!isDrawing || !animFinished) return;
+    if(!isDrawing || !animFinished || isErasing) return;
     ctx.lineWidth = 10;
     ctx.lineCap = "round";
     ctx.strokeStyle = clr
@@ -31,14 +32,31 @@ function draw(e){
     ctx.moveTo(e.clientX - 90, e.clientY - 95);
 }
 
+function erase() {
+    if(!isErasing) return;
+    console.log("started")
+    ctx.globalCompsiteOperation = "destination-out";
+    ctx.strokeStyle = "rgba(255, 255, 255, 1)";
+}
+
+function StartErasing() { isErasing = true; console.log("Erasing"); }
+
 canvas.addEventListener("mousemove", draw);
 
 canvas.addEventListener("mousedown", StartPainting);
 canvas.addEventListener("mouseup", StopPainting);
+canvas.addEventListener('mouseout', StopPainting );
 
 function setColor(cl)
 {
-    clr = cl
+    isErasing = false;
+    clr = cl;
+    console.log("Eraseing");
+}
+
+function clrCanvas()
+{
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
 }
 
 function downloadImg() {
