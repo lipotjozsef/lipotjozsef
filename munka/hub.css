@@ -16,18 +16,43 @@ object
     width: 100%;
 }
 
-.Bottomcurves 
-{
-    bottom: 0px;
-    rotate: 180deg;
-}
-
 .container 
 {
     animation-name: bootup;
     animation-duration: 1s;
     transition: ease-in;
     margin: 20px;
+}
+
+#LobbyTxt 
+{
+    border-style: dashed; 
+    border-width: 5px; 
+    width: 220px;
+    padding: 5px;
+}
+
+a input
+{
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 1vh;
+    color: black;
+    transition: ease-in-out 0.2s;
+    font-size: 20px;
+    width: 50%;
+    border: none;
+    background: white;
+    color: black;
+}
+
+a input:hover
+{
+    background: black;
+    transition: ease-in-out 0.2s;
+    color: white;
+    scale: 110%;
 }
 
 @keyframes bootup {

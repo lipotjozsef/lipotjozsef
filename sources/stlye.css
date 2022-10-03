@@ -80,6 +80,27 @@ object
     height: 35px;
 }
 
+#hubbtn input
+{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 1vh;
+    color: black;
+    transition: ease-in-out 0.2s;
+    font-size: 20px;
+    width: 200px;
+    border: none;
+    background: white;
+    color: black;
+}
+
+#hubbtn input:hover
+{
+    background: black;
+    transition: ease-in-out 0.2s;
+    color: white;
+    scale: 110%;
+}
 @keyframes bootup {
     from {scale: 50%; opacity: 0%;}
     to {scale: 100%; opacity: 100%;}
