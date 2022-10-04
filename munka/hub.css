@@ -9,6 +9,8 @@ body
 { 
     margin: 0px; 
     size: auto;
+    background-image: url( '../sources/images/blobanimation.svg' );
+    background-repeat: no-repeat;
 }
 
 object
