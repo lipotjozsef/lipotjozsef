@@ -1,10 +1,12 @@
 const canvas = document.getElementById("rajz");
 var btn = document.getElementById("down");
+var SizeRange = document.getElementById("points");
 const ctx = canvas.getContext("2d");
 var clr = "#000000";
 var isDrawing = false;
 var isErasing = false;
 var animFinished = false;
+var size = SizeRange.ariaValueMax;
 
 window.setTimeout(function () {
    animFinished = true
@@ -22,31 +24,35 @@ function StopPainting(){
 }
 
 function draw(e){
-    if(!isDrawing || !animFinished || isErasing) return;
-    ctx.lineWidth = 10;
+    if(!isDrawing || !animFinished) return;
+    ctx.lineWidth = size;
     ctx.lineCap = "round";
-    ctx.strokeStyle = clr
     var RectOffset = canvas.getBoundingClientRect();
-
-    ctx.lineTo(e.clientX - RectOffset.x, e.clientY - RectOffset.y);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(e.clientX - RectOffset.x, e.clientY - RectOffset.y);
+    if(isErasing == true){
+        ctx.globalCompositeOperation="destination-out";
+      }else{
+        ctx.globalCompositeOperation="source-over";
+        ctx.strokeStyle = clr
+    }
+    Drawstroke(e.clientX - RectOffset.x, e.clientY - RectOffset.y)
 }
 
-function erase() {
-    if(!isErasing) return;
-    console.log("started")
-    ctx.globalCompsiteOperation = "destination-out";
-    ctx.strokeStyle = "rgba(255, 255, 255, 1)";
+function Drawstroke(eX, eY)
+{
+    ctx.lineTo(eX, eY); 
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(eX, eY);
 }
 
 function StartErasing() { isErasing = true; console.log("Erasing"); }
 
-canvas.addEventListener("mousemove", ()=> {
-if(!isErasing){draw}
-else{erase}
-});
+function sizeChange() 
+{
+    size = SizeRange.nodeValue;
+}
+
+canvas.addEventListener("mousemove", draw);
 
 canvas.addEventListener("mousedown", StartPainting);
 canvas.addEventListener("mouseup", StopPainting);
