@@ -26,10 +26,12 @@ function draw(e){
     ctx.lineWidth = 10;
     ctx.lineCap = "round";
     ctx.strokeStyle = clr
-    ctx.lineTo(e.clientX - 90, e.clientY -95);
+    var RectOffset = canvas.getBoundingClientRect();
+
+    ctx.lineTo(e.clientX - RectOffset.x, e.clientY - RectOffset.y);
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(e.clientX - 90, e.clientY - 95);
+    ctx.moveTo(e.clientX - RectOffset.x, e.clientY - RectOffset.y);
 }
 
 function erase() {
@@ -41,7 +43,10 @@ function erase() {
 
 function StartErasing() { isErasing = true; console.log("Erasing"); }
 
-canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("mousemove", ()=> {
+if(!isErasing){draw}
+else{erase}
+});
 
 canvas.addEventListener("mousedown", StartPainting);
 canvas.addEventListener("mouseup", StopPainting);
