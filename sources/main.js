@@ -1,13 +1,14 @@
 const canvas = document.getElementById("rajz");
 var btn = document.getElementById("down");
 var SizeRange = document.getElementById("points");
+var valp = document.getElementById("valp");
 const ctx = canvas.getContext("2d");
 var clr = "#000000";
 var isDrawing = false;
 var isErasing = false;
 var animFinished = false;
-var size = SizeRange.ariaValueMax;
-
+var size = SizeRange.innerHTML;
+valp.innerText = SizeRange.value;
 window.setTimeout(function () {
    animFinished = true
    console.log("Hello")
@@ -49,7 +50,8 @@ function StartErasing() { isErasing = true; console.log("Erasing"); }
 
 function sizeChange() 
 {
-    size = SizeRange.nodeValue;
+    size = SizeRange.value;
+    valp.innerText = SizeRange.value;
 }
 
 canvas.addEventListener("mousemove", draw);
