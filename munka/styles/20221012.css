@@ -1,0 +1,60 @@
+body
+{
+    background-color: #222;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#igazgato 
+{
+    border: 10px double red;
+}
+.tanar 
+{
+    border: 10px groove lightcoral;
+    padding: 5px;
+}
+.fontos
+{
+    color: blueviolet;
+    font-weight: bold;
+}
+.szellos
+{
+    letter-spacing: 3px;
+    color: cadetblue;
+}
+h3
+{
+    text-decoration: underline double wheat 3px;
+}
+ul
+{
+    /*list-style-type: square;*/
+    list-style-image: url("kisebbabdul.png");
+}
+a
+{
+    text-decoration: underline wavy white 2px;
+    color: wheat;
+}
+a input
+{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 1vh;
+    color: black;
+    transition: ease-in-out 0.2s;
+    font-size: 20px;
+    width: 200px;
+    border: none;
+    background: white;
+    color: black;
+}
+
+a input:hover
+{
+    background: black;
+    transition: ease-in-out 0.2s;
+    color: white;
+    scale: 110%;
+}
