@@ -29,6 +29,11 @@ object
     width: 100%;
 }
 
+.clrbtnCon 
+{
+    flex: left;
+}
+
 .Bottomcurves 
 {
     bottom: 0px;
@@ -71,13 +76,34 @@ object
     border-style: double;
     border-width: 10px;
     border-color: white;
+    background-color: gray;
 }
 
 #colbtn 
 {
     border-radius: 100%;
+    border: none;
     width: 35px;
     height: 35px;
+}
+
+#down
+{
+    transition: ease-in-out 0.3s;
+    background-color: lightcoral;
+    color: wheat;
+    border-radius: 1vh;
+    border: none;
+    width: 100px;
+    height: 35px;
+}
+
+#down:hover
+{
+    transition: ease-in-out 0.3s;
+    color: lightcoral;
+    background-color: wheat;
+    scale: 110%;
 }
 
 #hubbtn input
