@@ -1,0 +1,20 @@
+body
+{
+    background-color: #222;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* table és td */
+table, td, th
+{
+    border: 5px solid blue;
+    border-collapse: collapse;
+}
+
+/* divben van és p */
+div p 
+{
+    background-color: aquamarine;
+    color: gray;
+}
