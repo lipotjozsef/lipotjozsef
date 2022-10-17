@@ -71,6 +71,13 @@ object
     box-shadow: 0px 0px 10px 0px white, 0px 0px 20px 0px white;
 }
 
+#juhtable, #juhtable th
+{
+    border: 5px double white;
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28);
+}
+
 #rajz
 {
     border-style: double;
