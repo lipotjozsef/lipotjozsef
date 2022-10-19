@@ -1,0 +1,11 @@
+table, tr, th, td
+{
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.napok
+{
+    padding: 10px;
+}

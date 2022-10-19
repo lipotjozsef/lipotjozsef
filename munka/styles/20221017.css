@@ -3,13 +3,25 @@ body
     background-color: #222;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
 }
 
 /* table és td */
 table, td, th
 {
-    border: 5px solid blue;
+    border: 5px solid rgb(41, 45, 205);
     border-collapse: collapse;
+}
+
+td, th
+{
+    padding: 5px;
+}
+
+th 
+{
+    background-color: lightcoral;
+    color: wheat;
 }
 
 /* divben van és p */
@@ -17,4 +29,15 @@ div p
 {
     background-color: aquamarine;
     color: gray;
+}
+
+.kozep
+{
+    text-align: center;
+}
+
+hr
+{
+    margin: 20px 0;
+    border: 5px solid blueviolet;
 }
