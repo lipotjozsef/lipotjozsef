@@ -9,3 +9,19 @@ table, tr, th, td
 {
     padding: 10px;
 }
+
+a input
+{
+    border: none;
+    background-color: white;
+    transition: ease-in-out 0.3s;
+    width: 50px;
+    height: 20px;
+    border-radius: 1vh;
+}
+
+a input:hover
+{
+    background-color: #aaa;
+    transition: ease-in-out 0.3s;
+}
