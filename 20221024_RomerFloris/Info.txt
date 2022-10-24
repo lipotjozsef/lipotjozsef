@@ -1,0 +1,32 @@
+Container osztályú div 
+	- háttérszíne legyen: CornSilk
+    - kerüljön az oldal közepére.
+					   
+A Rómer Flóris felirat
+	- legyen 1-es szintű címsor
+	- Legyen jobb oldalon
+	- Font méret legyen 36 pontos
+	- Alatta egy dupla, 3 pontos narancssárga (orange) vonal (keret) legyen.
+	
+Mindkét kép:
+	- szélessége legyen 200 képpont
+	- körülötte legyen 30 képpontos margó
+	- legyen egy 1 képpontos narancssárga (orange) kerete
+	
+Az életpályája, Főbb művei, Folyóiratai, Kitüntetési feliratok
+	- legyenek 2-es szintű címsorok
+	- fölöttük egy 1 képpont magas  narancssárga (orange) vonal (keret) legyen.
+	- a felirat és felette lévő keret között legyen 15 képpont távolság
+	- 500 képpont széles legyen
+
+A táblázat 
+	- körben 3 képpont széles dupla narancssárga (orange) keret legyen
+	- belöl minden cellát 1 képpont széles narancssárga vonal keretezzen
+	- minden cella belső margója (bélése): alul és felül 5 képpont, jobbról és balról 20 képpont legyen
+	
+A folyó szövegek legyenek sorkizártak
+
+A forrás:
+	- legyen "hiperhivakozás", az URL megtalálható a forrás.txt állományban
+	- mindig a képernyő jobb felső részében legyen.
+	
