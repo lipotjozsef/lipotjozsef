@@ -1,0 +1,60 @@
+body
+{
+    background-image: url('Hatter.png');
+}
+
+a { text-decoration: none; }
+
+p { text-align: justify; }
+
+table
+{ 
+    border: 3px solid blue;
+    border-collapse: collapse;
+}
+
+tr, td
+{
+    border: 2px blue solid;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#centercim
+{
+    text-align: center;
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+#centercim:hover
+{
+    text-align: center;
+    scale: 110%;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+#pirostxt
+{
+    color: red;
+    font-weight: bold;
+}
+
+#szendokep
+{
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.cimtxt
+{
+    text-decoration: underline solid 2px ;
+}
+
+.kektxt
+{
+    color: blue;
+    font-style: italic;
+}
