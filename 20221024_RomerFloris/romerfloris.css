@@ -1,0 +1,72 @@
+body,html 
+{
+	background-color: orange;
+	color: black;
+	margin: 0px;
+	padding	: 0px;
+	font-family: verdana, arial, sans serif;
+}
+
+.container 
+{
+	width: 960px;
+    background-color: cornsilk;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.forras
+{
+    float: right;
+}
+
+h1
+{
+    text-align: right;
+    border-bottom: 3px double orange;
+    font-size: 36px;
+}
+
+h2
+{
+    border-top: 1px solid orange;
+    padding-top: 15px;
+    width: 500px;
+}
+
+img
+{
+    width: 200px;
+    margin: 0 0 30px 30px;
+    border: 1px solid orange;
+    float: right;
+}
+
+p 
+{
+	text-indent: 30px;
+    text-align: justify;
+}
+
+ul 
+{
+	margin-left: 100px;
+}
+
+li 
+{
+	margin-bottom: 5px;
+}
+
+
+table
+{
+	margin-left: 100px;
+    border: 3px double orange;
+    border-collapse: collapse;
+}
+td
+{
+    border: 1px solid orange;
+    padding: 5px 20px;
+}
