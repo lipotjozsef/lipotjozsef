@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #808080;  /*szürke szín*/
+}
+
+h1 {
+    font-size: 32px;
+}
+
+#tartalom {
+    margin: auto;
+    width: 70%;
+    min-width: 800px;    
+}
+#fejlec {
+    width: 100%;
+}
+
+#fejlec img {
+    width: 100%;
+}
+
+.reszletek h1 {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.reszletek ul {
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.reszletek p {
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+.reszletek img {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /*visibility: hidden;*/  /*Láthatalanná teszi....*/
+}
+
+.reszletek {
+    width: 50%;
+    float: left;     
+}
+
+.reszletek a {
+    color: red;
+}
+
+.reszletek a:visited {
+    color: blue;
+}
+
+.reszletek a:hover {
+    color: white;
+    background-color: red;
+}
