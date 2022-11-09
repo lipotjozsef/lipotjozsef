@@ -4,10 +4,13 @@ body{
   background-repeat: repeat-y;
   background-position: right top;
   padding: 15px 95px 15px 15px;
+  background-image: url("hatterkocka.png");
+  color: #443502;
 }
 
 #cimkep{
-  float:left;  
+  float:left;
+  width: 150px;
 }
 
 h1{
@@ -16,6 +19,7 @@ h1{
 
 p{
   text-align: justify;
+  margin: 5px;
 }
 
 
@@ -24,6 +28,8 @@ p{
 }
 
 .erdekesseg{
+  background-color: white;
+  font-style: italic;
   font-size: 70%;
   padding: 7px;
   font-weight: normal;
@@ -31,4 +37,9 @@ p{
 
 li{
   font-weight:bold;
+  list-style-type: square;
+}
+
+li p:first-child {
+  font-weight: bold;
 }

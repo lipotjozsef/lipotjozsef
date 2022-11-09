@@ -7,13 +7,14 @@ body{
 	background-image: url('fatyol.png');
 	width: 880px;
 	margin: auto;
+  padding: 35px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
 
-h1{
+h1, h2{
 	color: indigo;
 	font-variant: small-caps;
 	text-shadow: 1px 1px white;
@@ -26,14 +27,20 @@ p{
   line-height: 150%;
 }
 
+li {
+  margin-bottom: 25px;
+}
+
 .kepkeret {
   width: 375px;
   float: right;
   text-align: center;
   font-size: 75%;
+  font-style: italic;
   padding: 0px 5px 5px;
   margin-left: 10px;
   background-image: url('fatyol.png');
+  border: 2px solid darkblue;
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 10px 10px 10px gray;  
@@ -47,5 +54,20 @@ p{
 
 
 a{
+  font-weight: bold;
   text-decoration: none;
+  color: coral;
+}
+
+a:visited {
+  color:violet;
+}
+
+a:active {
+  color: aquamarine;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: cadetblue;
 }
