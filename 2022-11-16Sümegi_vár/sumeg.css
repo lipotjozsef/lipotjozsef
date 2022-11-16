@@ -1,0 +1,130 @@
+body {
+    background: #f8eabe url(hatter.jpg) center top no-repeat;
+    color: #a81919;
+}
+
+#fejlec {
+    width: 1349px;
+    text-align: center;
+    margin: auto;
+    margin-top: -10px;
+}
+
+#menu {
+    margin-top: -100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 300px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #5e0e0e;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    display: inline-block;
+    padding: 15px;
+}
+
+li a:hover {
+
+    background-color: #a81919;
+}
+
+#menupont {
+    padding-right: 280px;
+}
+
+
+#nagykep {
+    width: 1349px;
+    padding-top: 15px;
+}
+
+p {
+    text-align: justify;
+    font-size: 12pt;
+}
+
+#szoveg {
+    padding: 20px;
+}
+
+h3 {
+    text-align: right;
+
+    font-size: 12pt;
+    padding-right: 200px;
+    margin-bottom: 40px;
+}
+
+#lablec {
+    height: 50px;
+    width: 1349px;
+    margin: auto;
+    background-color: #5e0e0e;
+    text-align: center
+}
+
+#logoalul {
+    margin: -50px;
+}
+
+#hivatkozas {
+    margin-top: -30px;
+}
+
+#lablec a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#lablec a:hover{
+    color: #DB8C8C;
+}
+
+
+#tartalom {
+    width: 1349px;
+    margin: 0 auto;
+}
+
+.kepjobb {
+    float: right;
+    width: 450px;
+    padding-left: 10px;
+}
+
+.kepbal {
+    float: left;
+    width: 450px;
+    padding-right: 10px;
+}
