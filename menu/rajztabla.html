@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sources/stlye.css">
+</head>
+<body>
+    <canvas id="rajz" width="800" height="300"></canvas><br>
+    <div>
+
+    <div class= "clrbtnCon">
+        <button style="background-color: red;" onclick="setColor('#FF0000')" id="colbtn"></button>
+        <button style="background-color: green;" onclick="setColor('#00FF00')" id="colbtn"></button>
+        <button style="background-color: blue;" onclick="setColor('#0000FF')" id="colbtn"></button>
+        <button style="background-color: black;" onclick="setColor('#000000')" id="colbtn"></button>
+        <button style="background-color: white;" onclick="setColor('#FFFFFF')" id="colbtn"></button>
+    </div>
+        <button onclick="clrCanvas()" id="colbtn">&#128465;</button>
+        <button onclick="StartErasing()" id="colbtn"><img style="margin: 0px; width: 15px; height: 15px;" src="./sources/images/radir.png"></button>
+        <button onclick="downloadImg()" id="down">Letöltés</button>
+        <input type="range" id="points" name="points" value="10" min="5" max="50" onchange="sizeChange()">
+        <p style="display: inline;" id="valp"></p>
+
+    </div>
+    <script type="application/x-javascript" src="sources\main.js"></script>
+</body>
+</html>
