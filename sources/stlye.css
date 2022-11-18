@@ -2,7 +2,7 @@ html
 {
     background-color: #fafafa;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -82,6 +82,12 @@ header
     text-decoration: underline solid;
 }
 
+.mcon 
+{
+    align-items: center;
+    margin: 0 auto;
+}
+
 .img-con 
 {
     display: flex;
@@ -111,7 +117,7 @@ header
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
     background-color: rgb(22, 22, 22, 0.6);
     color: white;
     transition: .5s;
@@ -139,7 +145,7 @@ header
 .card:hover .intro
 {
     height: 230px;
-    bottom: 155px;
+    bottom: 300px;
     background: rgb(22, 22, 22, 0.7);
 }
 
@@ -155,11 +161,30 @@ header
     rotate: -3deg;
 }
 
-#juhtable, #juhtable th
+.juhtable, .juhtable th
 {
-    border: 5px double white;
-    border-collapse: collapse;
-    background-color: rgb(233, 233, 233);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    background-color: #fafafa;
+    margin: 0 auto;
+    font-weight: bold;
+    font-style: italic;
+    width: 455px;
+}
+
+.juhtable td, .juhtable th
+{
+    padding: 10px;
+}
+
+.fr 
+{
+    color: rgb(0, 76, 218);
+    font-weight: bold;
+}
+
+.sr 
+{
+    background-color: #dadada;
 }
 
 #rajz
