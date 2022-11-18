@@ -5,10 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../sources/stlye.css">
+    <style>
+html 
+{
+    background-color: #fafafa;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body { margin: 0px; size: auto;}
+
+header{ margin-bottom: 30px; }
+
+div { text-align: center; }
+
+#rajz
+{
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+    background-color: gray;
+}
+
+#colbtn 
+{
+    border-radius: 100%;
+    border: none;
+    width: 35px;
+    height: 35px;
+}
+
+#down
+{
+    transition: ease-in-out 0.3s;
+    background-color: lightcoral;
+    color: wheat;
+    border-radius: 1vh;
+    border: none;
+    width: 100px;
+    height: 35px;
+}
+
+#down:hover
+{
+    transition: ease-in-out 0.3s;
+    color: lightcoral;
+    background-color: wheat;
+    scale: 110%;
+}
+
+#selector
+{
+    background-color: #f3f3f3;
+    height: 35px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#selector .MenuBtn
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+    font-size: 20px;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+#selector .MenuBtn:hover
+{
+    transition: ease-in-out 0.3s;
+    color: white;
+    background-color: black;
+    border-radius: 0.5em;
+    text-decoration: underline solid;
+}
+
+    </style>
 </head>
 <body>
-    <canvas id="rajz" width="800" height="300"></canvas><br>
+    <header>
+        <div id="selector">
+            <a href="../index.html" class="MenuBtn">HOME</a>
+            <a href="../munka/munkahub.html" class="MenuBtn">HUB</a>
+            <a href="#" class="MenuBtn">RAJZTÁBLA</a>
+        </div>
+    </header>
+    <center>
+        <canvas id="rajz" width="800" height="300"></canvas><br>
+    </center>
     <div>
 
     <div class= "clrbtnCon">
@@ -19,12 +105,12 @@
         <button style="background-color: white;" onclick="setColor('#FFFFFF')" id="colbtn"></button>
     </div>
         <button onclick="clrCanvas()" id="colbtn">&#128465;</button>
-        <button onclick="StartErasing()" id="colbtn"><img style="margin: 0px; width: 15px; height: 15px;" src="./sources/images/radir.png"></button>
+        <button onclick="StartErasing()" id="colbtn"><img style="margin: 0px; width: 15px; height: 15px;" src="../sources/images/radir.png"></button>
         <button onclick="downloadImg()" id="down">Letöltés</button>
         <input type="range" id="points" name="points" value="10" min="5" max="50" onchange="sizeChange()">
         <p style="display: inline;" id="valp"></p>
 
     </div>
-    <script type="application/x-javascript" src="sources\main.js"></script>
+    <script type="application/x-javascript" src="../sources/main.js"></script>
 </body>
 </html>

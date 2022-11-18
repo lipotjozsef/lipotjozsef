@@ -6,23 +6,15 @@ html
     scroll-behavior: smooth;
 }
 
-body 
-{ 
-    margin: 0px; 
-    size: auto;
-}
+body { margin: 0px; size: auto;}
 
-center 
-{
-    animation-name: bootup;
-    animation-duration: 2.5s;
-    transition: ease-in;
-    margin: 20px;
-}
+header{ margin-bottom: 30px; }
 
-ul 
+footer
 {
-    text-align: left;
+    background-color: #222;
+    text-align: center;
+    overflow: hidden;
 }
 
 #selector
@@ -30,37 +22,7 @@ ul
     background-color: #f3f3f3;
     height: 35px;
     text-align: center;
-    padding-top: 10px;
-}
-
-.HubBtn
-{
-    text-decoration: underline dotted;
-}
-
-header
-{
-    padding-top: 10px;
-    margin-bottom: 30px;
-}
-
-#bottomcurve
-{
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-#bottomcurve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 214px;
-}
-
-#bottomcurve .shape-fill {
-    fill: #f1f1f1;
+    padding-top: 20px;
 }
 
 #selector .MenuBtn
@@ -82,24 +44,23 @@ header
     text-decoration: underline solid;
 }
 
-.mcon 
+#bottomcurve
 {
-    align-items: center;
-    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-.img-con 
-{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+#bottomcurve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 214px;
 }
-.card 
-{
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
+
+#bottomcurve .shape-fill {
+    fill: #f1f1f1;
 }
 
 .card img
@@ -117,7 +78,7 @@ header
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 300px;
+    bottom: 210px;
     background-color: rgb(22, 22, 22, 0.6);
     color: white;
     transition: .5s;
@@ -145,7 +106,7 @@ header
 .card:hover .intro
 {
     height: 230px;
-    bottom: 300px;
+    bottom: 210px;
     background: rgb(22, 22, 22, 0.7);
 }
 
@@ -187,62 +148,142 @@ header
     background-color: #dadada;
 }
 
-#rajz
-{
-    border-style: double;
-    border-width: 10px;
-    border-color: white;
-    background-color: gray;
+.separator-tilt {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-#colbtn 
-{
-    border-radius: 100%;
-    border: none;
-    width: 35px;
-    height: 35px;
+.separator-tilt svg {
+    position: relative;
+    display: inline;
+    width: calc(100% + 1.3px);
+    height: 109px;
+    transform: rotateY(180deg);
 }
 
-#down
-{
-    transition: ease-in-out 0.3s;
-    background-color: lightcoral;
-    color: wheat;
-    border-radius: 1vh;
-    border: none;
-    width: 100px;
-    height: 35px;
+.separator-tilt .shape-fill {
+    fill: #222222;
 }
 
-#down:hover
+#dark-cointer 
 {
-    transition: ease-in-out 0.3s;
-    color: lightcoral;
-    background-color: wheat;
-    scale: 110%;
-}
-
-#hubbtn input
-{
-    margin: 20px;
-    padding: 10px;
-    border-radius: 1vh;
-    color: black;
-    transition: ease-in-out 0.2s;
-    font-size: 20px;
-    width: 200px;
-    border: none;
-    background: white;
-    color: black;
-}
-
-#hubbtn input:hover
-{
-    background: black;
-    transition: ease-in-out 0.2s;
+    text-align: justify;
     color: white;
-    scale: 110%;
+    padding-top: 10px;
+    padding: 10px 0 50px 50px;
+    background-color: #222222;
 }
+
+.mcon 
+{
+    align-items: center;
+    margin: 0 auto;
+}
+
+.img-con 
+{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.card 
+{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.dcon 
+{
+    margin-top: 100px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 1em;
+    font-size: 15px;
+}
+
+.dcon p
+{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.dcon h2 { text-decoration: underline dotted 3px; }
+
+.dcon h1
+{
+    text-decoration: underline double 3px;
+    font-size: 40px;
+}
+
+.jobbkep 
+{
+    margin: 15px;
+    width: 300px;
+    float: right;
+    border-top-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    transition: .5s ease-in-out;
+}
+
+.jobbkep:hover
+{
+    transition: .5s ease-in-out;
+
+    rotate: -3deg;
+}
+
+.balkep 
+{
+    float: left;
+    height: 225px;
+    overflow: hidden;
+}
+
+.balkep img
+{
+    transition: .5s ease-in-out;
+    bottom: -180px;
+    position: relative;
+    margin: 15px;
+    width: 300px;
+    float: left;
+    border-top-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    filter: blur(8px);
+}
+
+.balkep:hover img
+{
+    transition: .5s ease-in-out;
+    bottom: 0px;
+    rotate: 3deg;
+    filter: none;
+}
+
+#fcon:hover a
+{
+    bottom: -15px;
+    transition: 0.5s ease-in-out;
+}
+
+#footerTOP
+{
+    transition: 0.5s ease-in-out;
+    font-size: 30px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: -30px;
+    text-decoration: none;
+    color: gray;
+    background-color: #dadada;
+    border-radius: 100%;
+}
+
 @keyframes bootup {
     from {scale: 50%; opacity: 0%;}
     to {scale: 100%; opacity: 100%;}
