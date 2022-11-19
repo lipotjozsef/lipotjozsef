@@ -12,6 +12,7 @@ header{ margin-bottom: 30px; }
 
 footer
 {
+    
     background-color: #222;
     text-align: center;
     overflow: hidden;
@@ -265,23 +266,77 @@ footer
     filter: none;
 }
 
-#fcon:hover a
-{
-    bottom: -15px;
-    transition: 0.5s ease-in-out;
-}
+
 
 #footerTOP
 {
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     font-size: 30px;
     padding: 10px 20px;
     position: relative;
-    bottom: -30px;
+    bottom: -60px;
     text-decoration: none;
     color: gray;
-    background-color: #dadada;
+    background-color: aliceblue;
     border-radius: 100%;
+}
+
+footer:hover #forras
+{
+    bottom: 0px;
+    transition: 0.6s ease-in-out;
+}
+
+footer:hover #footerTOP
+{
+    bottom: -10px;
+    transition: 0.6s ease-in-out;
+}
+
+#forras
+{
+    position: relative;
+    width: 100%;
+    bottom: -100px;
+    float: left;
+    transition: 0.3s ease-in-out;
+    background-color: aliceblue;
+    padding: 0 5px;
+}
+
+#forras p
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#forras p::before
+{
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: aqua;
+}
+
+#forras:hover p::before
+{
+    transition: 0.5s ease-in-out;
+    left: 0;
+}
+
+#forras:hover
+{
+    transition: 0.5s ease-in-out;
+    border-radius: 1em;
 }
 
 @keyframes bootup {
