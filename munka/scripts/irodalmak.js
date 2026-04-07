@@ -12,7 +12,7 @@ const usedMaterialLinks = [
 usedMaterialLinks.forEach( ([name, link], index) => {
     const newItemElement = document.createElement("li");
 
-    newItemElement.innerHTML = `[${index+1}] ${name}\t- <a href="${link}" target="_blank">\t${link}</a>`;
+    newItemElement.innerHTML = `[${index+1}] ${name.replaceAll("_", " ")}\t- <a href="${link}" target="_blank">\t${link}</a>`;
 
     ulElement.appendChild(newItemElement);
 })
