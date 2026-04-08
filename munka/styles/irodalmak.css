@@ -1,0 +1,52 @@
+:root {
+    /* colors from - https://brand.github.com/foundations/color */
+    --cool-gray: #F2F5F3;
+    --process-black: #0f1210;
+    --github-green: #0FBF3E;
+
+    --base-color: var(--cool-gray);
+    --text-color: var(--process-black);
+}
+
+.dark-mode {
+    --base-color: var(--process-black);
+    --text-color: var(--cool-gray);
+}
+
+* {
+    font-size: 18px;
+}
+
+body {
+    padding-top: 2em;
+    max-width: 75vh;
+    min-width: 50vh;
+    margin: 0 auto;
+
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+a {
+    color: var(--github-green);
+}
+
+a:hover {
+    filter: brightness(0.8);
+}
+
+a:visited {
+    color: pink;
+}
+
+footer {
+    text-align: center;
+}
