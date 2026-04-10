@@ -7,6 +7,7 @@ const ulElement = document.querySelector("#link-list");
 const usedMaterialLinks = [
     ["Wikipédia", "https://hu.wikipedia.org/wiki/Súrlódás"],
     ["Wikipédia", "https://en.wikipedia.org/wiki/Guillaume_Amontons"],
+    ["Wikipédia", "https://en.wikipedia.org/wiki/Friction"]
     ["Netfizika", "https://www.netfizika.hu/tudas/node/14221"],
     ["Netfizika", "https://www.netfizika.hu/tudas/node/14225"],
     ["BME Robotalkalmazások", "https://mogi.bme.hu/TAMOP/robotalkalmazasok/ch06.html"]
